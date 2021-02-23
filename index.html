@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header">
+    <h1><a href="index.html"><img class="logo" src="ask_logo.png" width="250px"></a></h1>
+
+    <ul class="headerMenu">
+<!--        <li><a href="contacts.html">КОНТАКТЫ</a></li>-->
+        <li><a href="#faire">УСЛУГИ</a></li>
+        <li><a href="#team">КОМАНДА</a></li>
+        <li><a href="#contact">ЗАЯВКА НА ПРОЕКТ</a></li>
+    </ul>
+</div>
+
+<a name="faire"></a>
+<div class="centre">
+    <div class="faire_main">
+    <p>ПРЕДОСТАВЛЯЕМ УСЛУГИ:</p>
+    <div class="line"></div>
+    <ul class="faire_menu">
+        <li><img src="telegram_bot.png" width="75px" height="75px"><br><br>Создание telegram ботов</li>
+        <li><img src="www_visit.png" width="75px" height="75px"><br><br>Создание сайтов-визиток</li>
+        <li><img src="www_market.png" width="75px" height="75px"><br><br>Создание сайтов-магазинов</li>
+        <li><img src="python.png" width="75px" height="75px"><br><br>Создание панелей управления сайтами</li>
+        <li><img src="myadmin.svg" width="135px" height="75px"><br>Настройка и администрирование баз данных</li>
+        <li><img src="consult.png" width="75px" height="75px"><br><br>Консалтинг в сфере интернет-технологий</li>
+        <li><img src="study.png" width="75px" height="75px"><br><br>Обучение Python, SQL, HTML, CSS</li>
+    </ul>
+    </div>
+</div>
+
+<div class="etageTrois">
+    <div class="troisFlex">
+        <div class="leftTroisMain">
+            <h1>ДОВЕРЯЯ НАМ ВЫ ПОЛУЧАЕТЕ</h1>
+            <div class="leftTrois">
+                <div class="troisLeftBlock">
+                    <div class="Img1"><img src="service_1.png" alt="" width="75px" height="75px"></div>
+                    <div class="ordinateur">
+                        <h2>СЕРВИС</h2>
+                        <p>Качественная и доступная поддержка наших технических решений.</p>
+                    </div>
+                </div>
+                <div class="troisRightBlock">
+                    <div class="Img2"><img src="quality.png" alt="" width="75px" height="75px"></div>
+                    <div class="stylo">
+                        <h2>КАЧЕСТВО</h2>
+                        <p>Мы гарантируем качество наших технических решений годовой гарантией.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leftTrois_2">
+                <div class="troisLeftBlock_2">
+                    <div class="Img1"><img src="price.png" alt="" width="75px" height="75px"></div>
+                    <div class="ordinateur">
+                        <h2>ДОСТУПНОСТЬ</h2>
+                        <p>Современные технические решения по оптимальным ценам.</p>
+                    </div>
+                </div>
+                <div class="troisRightBlock_2">
+                    <div class="Img2"><img src="lamp.png" alt="" width="75px" height="75px"></div>
+                    <div class="stylo">
+                        <h2>РАЗВИТИЕ</h2>
+                        <p>Современные интернет-технологии на службе у Вашего бизнеса.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rightTrois"></div>
+    </div>
+</div>
+
+<a name="team"></a>
+<div class="team">
+    <div class="faire_main">
+    <p>НАША DREAM-TEAM</p>
+    <div class="line"></div>
+    <div class="faire_menu" id="team_menu">
+        <div><img id="team_menu_1" src="team_1.jpg" width="220px" height="220px"><br><br>Маркетинг и презентации</div>
+        <div><img id="team_menu_2" src="team_2.jpg" width="220px" height="220px"><br><br>Сложные инженерные решения</div>
+        <div><img id="team_menu_3" src="team_3.jpg" width="220px" height="220px"><br><br>Ответственный за кассу</div>
+        <div><img id="team_menu_4" src="team_4.jpg" width="220px" height="220px"><br><br>Планирование и логистика</div>
+    </div>
+    </div>
+</div>
+
+<a name="contact"></a>
+<div class="ask_form_title">
+    <h3>ОСТАВЬТЕ ЗАЯВКУ НА ПРОЕКТ</h3>
+    <p>И МЫ ОБЯЗАТЕЛЬНО СВЯЖЕМСЯ С ВАМИ</p>
+</div>
+
+<form class="ask_form" action="" method="post" enctype="multipart/form-data">
+    <div>
+        <div>
+            <input type="text" placeholder="Имя" name="nom" required>
+        </div>
+        <br>
+        <div>
+            <input type="text" placeholder="Фамилия" name="prenom" required>
+        </div>
+        <br>
+        <div>
+            Впервые обращаетесь в ASK_studio?<br>
+            <span>Да</span>
+            <input type="radio" name="question" value="Oui" required>
+            <span>Нет</span>
+            <input type="radio" name="question" value="Non" required>
+        </div>
+        <br>
+        <div>
+            <select name="user_city" id="" required>
+                <option value="">Выберите тематику вопроса</option>
+                <option value="0">Телеграм-бот</option>
+                <option value="1">Сайт-визитка</option>
+                <option value="2">Сайт-магазин</option>
+                <option value="3">Custom-сайт</option>
+                <option value="4">Панель управления БД</option>
+                <option value="5">Администрирование БД</option>
+                <option value="6">Обучение</option>
+                <option value="7">Консультация</option>
+                <option value="8">Другой вопрос</option>
+            </select>
+        </div>
+        <br>
+    </div>
+
+    <div>
+        <textarea placeholder="Оставьте Ваши контакты" name="user_info_lettre" cols="38" rows="10" required></textarea>
+    </div>
+
+    <div>
+        <br>
+        <label for="">Загрузите Ваше ТЗ</label>
+        <p><input type="file" name="f"></p>
+        <br>
+        <div>
+           <span>Соглашаюсь с правилами сайта</span>
+           <input type="checkbox" required>
+        </div>
+        <br>
+        <button type="submit">
+            Отправить заявку
+        </button>
+    </div>
+</form>
+
+</body>
+</html>
